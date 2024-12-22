@@ -45,4 +45,4 @@ if __name__ == "__main__":
     dataloader = DataLoader(dataset, batch_size=64, shuffle=True)
     model = JepaModel(128, 16, is_training=True)
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
-    train(model, dataloader, get_device(), optimizer, 10)
+    train(model, dataloader, get_device(), optimizer, 30)
