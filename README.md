@@ -43,3 +43,13 @@ $$
 Where the Target Encoder $\text{Enc}\_\psi$ may be identical to Encoder $\text{Enc}\_\theta$ ([VicReg](https://arxiv.org/pdf/2105.04906), [Barlow Twins](https://arxiv.org/pdf/2103.03230)), or not ([BYOL](https://arxiv.org/pdf/2006.07733))
 
 $D(\tilde{s}\_n, s'\_n)$ is some "distance" function. However, minimizing the energy naively is problematic because it can lead to representation collapse (why?). There are techniques (such as ones mentioned above) to prevent this collapse by adding regularisers, contrastive samples, or specific architectural choices. Feel free to experiment.
+
+# Result on probing:
+```
+Total Trainable Parameters: 2,526,384
+normal loss: 3.144282579421997
+wall loss: 7.4941086769104
+wall_other loss: 7.840542793273926
+
+expert loss: 11.479360580444336
+```
